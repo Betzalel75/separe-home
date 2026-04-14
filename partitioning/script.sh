@@ -3,7 +3,7 @@
 # =====================================================
 # Script de séparation du /home de la partition racine
 # Auteur : Betzalel75
-# Usage : sudo bash separe-home.sh
+# Usage : sudo bash script.sh
 # =====================================================
 
 set -euo pipefail

@@ -1,0 +1,75 @@
+window-theme = "ghostty"
+
+theme = "light:Horizon Bright,dark:Broadcast"
+#theme = "dark:Rose Pine,light:Rose Pine Dawn"
+
+# --------------------------------------- #
+
+font-family = "JetBrainsMono NF"
+
+
+font-size = 12
+
+font-synthetic-style = "true"
+font-feature = "zero", "ss02", "ss03", "ss04", "ss05", "calt"
+font-thicken = true
+# ---------------------------- #
+
+# Diviser l'écran horizontalement (un en haut, un en bas)
+keybind = "ctrl+shift+d=new_split:down"
+
+# Diviser l'écran verticalement (un à gauche, un à droite)
+keybind = "ctrl+shift+r=new_split:right"
+
+# Fermer le split actuel
+keybind = "ctrl+shift+w=close_surface"
+
+# Naviguer entre les splits avec les flèches
+keybind = "ctrl+shift+up=goto_split:up"
+keybind = "ctrl+shift+down=goto_split:down"
+keybind = "ctrl+shift+left=goto_split:left"
+keybind = "ctrl+shift+right=goto_split:right"
+
+# ---------------------------- #
+
+window-padding-x = 10
+window-padding-y = 10
+
+window-decoration = true
+
+cursor-style=block
+
+adjust-cell-height=35%
+
+mouse-scroll-multiplier = 2
+
+window-colorspace = "display-p3"
+
+copy-on-select = clipboard
+
+window-padding-balance = true
+
+window-save-state = always
+
+###
+# Values: "true", "false", "detect"
+gtk-single-instance = detect             
+# Boolean: true/false
+gtk-titlebar = true                    
+             
+# Boolean: true/false
+gtk-wide-tabs = true                   
+                    
+###
+
+background-opacity = 0.9
+
+background-blur = 90
+ 
+background-opacity-cells = true
+
+# ---------------------------- #
+
+unfocused-split-opacity = 0
+unfocused-split-fill = "#524f4e"
+split-divider-color = #50fa7b
