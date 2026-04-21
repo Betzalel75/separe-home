@@ -15,7 +15,6 @@ RED="\033[31m"
 GREEN="\033[32m"
 YELLOW="\033[33m"
 BLUE="\033[34m"
-MAGENTA="\033[35m"
 CYAN="\033[36m"
 BOLD="\033[1m"
 
@@ -78,7 +77,8 @@ apt install -y \
 
 # Configuration de Wireshark pour permettre la capture sans root (déjà demandé à l'installation)
 log_info "Wireshark : si vous n'avez pas autorisé les non-root à capturer, exécutez 'sudo dpkg-reconfigure wireshark-common' plus tard."
-
+sudo usermod -aG wireshark "$REAL_USER"
+log_warning "Vous devrez redémarrer votre session pour que les changements prennent effet."
 # -------------------------------------------------------------------
 # 2. Outils web (ZAP)
 # -------------------------------------------------------------------
